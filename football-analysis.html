@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>해외축구 전술 분석 리포트 | EPL·라리가 심층 데이터 데이터 - SPORTS INSIGHT</title>
+    
+    <meta name="description" content="2026 유럽 축구 전술 트렌드 분석. xG(기대득점), PPDA(압박강도) 데이터를 통한 손흥민, 이강인, 김민재 경기력 심층 리포트 및 해외축구 전문 분석 제공.">
+    <meta name="keywords" content="축구분석, 해외축구전술, EPL전술분석, 기대득점(xG), 손흥민평점, 이강인분석, 김민재수비데이터, 실시간축구데이터, 축구통계사이트, 챔피언스리그분석">
+    <link rel="canonical" href="https://aimingtech.com/football-analysis.html">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root { --gold: #c5a059; --dark: #121212; --white: #ffffff; --gray-bg: #f4f4f4; --border: #eeeeee; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Noto Sans KR', sans-serif; background-color: #fff; color: var(--dark); line-height: 1.8; }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+
+        /* [Header] 인덱스 일관성 100% 고정 */
+        header { border-bottom: 1px solid #eee; position: sticky; top: 0; background: #fff; z-index: 1000; }
+        .nav-inner { max-width: 1300px; margin: 0 auto; display: flex; justify-content: space-between; align-items: flex-end; padding: 25px 20px; }
+        .logo-area { display: inline-flex; flex-direction: column; }
+        .logo { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 900; line-height: 1; margin-bottom: 8px; color: #000; }
+        .logo-line { width: 100%; height: 3px; background-color: var(--gold); }
+        nav { display: flex; gap: 30px; padding-bottom: 4px; }
+        nav a { font-size: 14px; font-weight: 700; color: #444; }
+        nav a:hover, nav a.active { color: var(--gold); }
+
+        /* [Sub Hero] */
+        .sub-hero { background: var(--dark); padding: 120px 20px; text-align: center; color: #fff; border-bottom: 5px solid var(--gold); }
+        .sub-hero span { font-family: 'Playfair Display', serif; color: var(--gold); font-size: 13px; letter-spacing: 6px; font-weight: 700; text-transform: uppercase; }
+        .sub-hero h1 { font-family: 'Playfair Display', serif; font-size: 52px; margin-top: 20px; font-weight: 900; }
+
+        /* [Main Content Layout] */
+        .container { max-width: 1300px; margin: 80px auto; padding: 0 20px; display: grid; grid-template-columns: 1fr 350px; gap: 60px; }
+        
+        /* [Tactical Content] */
+        .content-area h2 { font-family: 'Playfair Display', serif; font-size: 36px; margin-bottom: 30px; border-bottom: 2px solid var(--dark); padding-bottom: 15px; }
+        .content-area h3 { font-size: 24px; margin: 50px 0 20px; color: var(--gold); font-weight: 700; }
+        .content-area p { font-size: 16px; color: #444; margin-bottom: 25px; text-align: justify; }
+        .featured-img { width: 100%; height: 550px; object-fit: cover; margin-bottom: 40px; border-radius: 2px; }
+
+        /* [Data Box] 데이터 강조 디자인 */
+        .data-box { background: var(--gray-bg); padding: 40px; border-radius: 2px; margin: 40px 0; border-top: 4px solid var(--dark); }
+        .data-box h4 { font-family: 'Playfair Display', serif; font-size: 20px; margin-bottom: 20px; }
+        .data-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; text-align: center; }
+        .data-item { background: #fff; padding: 20px; border: 1px solid #eee; }
+        .data-item .val { display: block; font-size: 28px; font-weight: 900; color: var(--gold); font-family: 'Playfair Display', serif; }
+        .data-item .lab { font-size: 12px; color: #888; text-transform: uppercase; font-weight: 700; }
+
+        /* [Sidebar Analysis] */
+        .sidebar-box { background: #121212; color: #fff; padding: 40px; position: sticky; top: 120px; }
+        .sidebar-box h4 { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--gold); margin-bottom: 25px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 15px; }
+        .trend-item { margin-bottom: 30px; }
+        .trend-item span { font-size: 11px; color: var(--gold); font-weight: 800; display: block; margin-bottom: 5px; }
+        .trend-item p { font-size: 14px; line-height: 1.6; color: #bbb; }
+
+        /* [SEO Bottom] */
+        .seo-section { background: #fafafa; padding: 100px 20px; border-top: 1px solid #eee; }
+        .seo-inner { max-width: 900px; margin: 0 auto; color: #555; }
+        .seo-inner h3 { font-family: 'Playfair Display', serif; font-size: 26px; color: #000; margin-bottom: 30px; }
+
+        footer { text-align: center; padding: 80px; color: #aaa; font-size: 12px; border-top: 1px solid #eee; }
+
+        @media (max-width: 1024px) {
+            .container { grid-template-columns: 1fr; }
+            .sidebar-box { position: static; margin-top: 60px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="nav-inner">
+        <div class="logo-area">
+            <a href="index.html" class="logo">SPORTS INSIGHT</a>
+            <div class="logo-line"></div>
+        </div>
+        <nav>
+            <a href="live-schedule-relay.html">LIVE 편성표</a>
+            <a href="football-analysis.html" class="active">축구 분석</a>
+            <a href="nba-guide.html">농구 가이드</a>
+            <a href="mlb-report.html">야구 리포트</a>
+        </nav>
+    </div>
+</header>
+
+<section class="sub-hero">
+    <span>TACTICAL ARCHIVE & DATA METRICS</span>
+    <h1>해외축구 심층 전술 분석 리포트</h1>
+</section>
+
+<div class="container">
+    <main class="content-area">
+        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=2036&auto=format&fit=crop" class="featured-img" alt="Football Tactics Analysis">
+        
+        <h2>2026 유럽 축구의 전술적 변곡점: 하이브리드 압박</h2>
+        <p>
+            2026 시즌 프리미어리그(EPL)와 챔피언스리그를 관통하는 핵심 전술은 <strong>'공간 인지 기반의 하이브리드 압박'</strong>입니다. 단순한 맨마킹(Man-marking)을 넘어, 상대의 빌드업 경로를 데이터로 예측하고 특정 구역(Zone)에 함정을 설치하는 고도화된 수비 전략이 대세로 자리 잡았습니다. 이러한 전술적 변화는 <strong>스포츠중계</strong> 화면에서도 선수들의 간격 유지와 압박 강도(PPDA) 지표를 통해 선명하게 드러나고 있습니다.
+        </p>
+
+        <div class="data-box">
+            <h4>Weekly Tactical Metrics (Top Leagues)</h4>
+            <div class="data-list">
+                <div class="data-item"><span class="val">0.84</span><span class="lab">Avg xG per Match</span></div>
+                <div class="data-item"><span class="val">9.2</span><span class="lab">PPDA Intensity</span></div>
+                <div class="data-item"><span class="val">68%</span><span class="lab">Final Third Accuracy</span></div>
+            </div>
+        </div>
+
+        <h3>코리안 리거의 지표 분석: 이강인과 손흥민</h3>
+        <p>
+            PSG의 엔진으로 거듭난 <strong>이강인</strong>은 이번 시즌 리그앙(Ligue 1)에서 '기회 창출(Chances Created)' 부문 최상위권에 랭크되어 있습니다. 특히 박스 근처에서의 '점진적 전진 패스(Progressive Passes)' 성공률은 유럽 5대 리그 미드필더 중 상위 5%에 해당합니다. 
+        </p>
+        <p>
+            한편, MLS로 무대를 옮긴 <strong>손흥민</strong>은 여전히 '기대 득점 대비 실제 득점(G-xG)' 수치에서 압도적인 효율을 보여줍니다. 이는 그가 적은 기회 속에서도 얼마나 치명적인 마무리를 할 수 있는지 데이터로 입증하는 대목입니다. <strong>해외축구중계</strong> 시청 시 이러한 세부 지표를 함께 확인하면 경기의 흐름을 더 깊게 이해할 수 있습니다.
+        </p>
+
+        <h3>김민재와 수비 데이터의 진화</h3>
+        <p>
+            바이에른 뮌헨의 수비 라인을 지휘하는 <strong>김민재</strong>의 가치는 단순한 걷어내기 횟수가 아닌 '수비적 액션의 성공률'과 '라인 조절 거리'에서 발견됩니다. 현대 축구 분석팀은 김민재가 뒷공간을 커버하는 속도와 공중볼 경합 후 세컨볼 점유율을 핵심 성과 지표(KPI)로 관리합니다. 이러한 정밀 분석 리포트는 팬들에게 <strong>축구중계</strong> 그 이상의 통찰력을 제공합니다.
+        </p>
+    </main>
+
+    <aside class="sidebar-area">
+        <div class="sidebar-box">
+            <h4>Tactical Trends</h4>
+            <div class="trend-item">
+                <span>01. Inverted Fullbacks</span>
+                <p>풀백이 중앙 미드필더처럼 가담하여 수적 우위를 확보하는 전술의 고도화.</p>
+            </div>
+            <div class="trend-item">
+                <span>02. Highline Risk</span>
+                <p>높은 수비라인을 유지하면서 오프사이드 트랩 성공률을 높이는 AI 기반 훈련.</p>
+            </div>
+            <div class="trend-item">
+                <span>03. Transition Speed</span>
+                <p>탈취 후 5초 이내에 슈팅까지 이어지는 빠른 공수 전환 데이터 분석.</p>
+            </div>
+            <div class="trend-item" style="margin-top: 50px; text-align: center;">
+                <p style="font-size: 12px; color: var(--gold);">* 실시간 전술 데이터는 <br>경기 종료 후 1시간 이내 업데이트됩니다.</p>
+            </div>
+        </div>
+    </aside>
+</div>
+
+<section class="seo-section">
+    <div class="seo-inner">
+        <h3>스포츠인사이트: 축구 전술 데이터의 깊이를 더하다</h3>
+        <p>
+            <strong>스포츠인사이트</strong>는 <strong>aimingtech.com</strong>이 제공하는 전문 축구 분석 플랫폼으로, <strong>해외축구중계</strong> 시청의 질을 높이기 위한 심층 리포트를 발간합니다. <strong>EPL분석</strong>, <strong>챔피언스리그 데이터</strong>, 그리고 <strong>손흥민</strong>, <strong>이강인</strong>, <strong>김민재</strong> 등 코리안 리거들의 활약을 전술적 관점에서 재해석합니다.
+        </p>
+        <p>
+            단순히 <strong>실시간 스포츠중계</strong> 일정이나 결과를 나열하는 것을 넘어, 현대 축구의 복잡한 전술 체계를 팬들이 쉽게 이해할 수 있도록 돕습니다. <strong>쿠팡플레이</strong>나 <strong>스포티비</strong>를 통해 경기를 시청하기 전, 저희의 전술 리포트를 통해 경기 관전 포인트를 미리 확인해 보시길 권장합니다.
+        </p>
+    </div>
+</section>
+
+<footer>
+    &copy; 2026 Sports Insight by AimingTech. All Rights Reserved.
+</footer>
+
+</body>
+</html>

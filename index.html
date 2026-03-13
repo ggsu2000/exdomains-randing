@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스포츠중계 무료 실시간 분석 데이터 & 공식가이드 - SPORTS INSIGHT</title>
+    
+    <meta name="description" content="스포츠중계 사이트는 해외축구중계, EPL, MLB, NBA 중계 일정과 4K 고화질 시청 가이드 제공. 손흥민, 김하성, 이강인 경기 분석 및 라이브 스코어 확인.">
+    <meta name="keywords" content="스포츠중계, 해외축구중계, EPL중계, MLB중계, NBA중계, 쿠팡플레이, 티빙스포츠, 손흥민중계, 김하성다저스, 이강인분석">
+    <link rel="canonical" href="https://aimingtech.com/">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <meta name="theme-color" content="#c5a059">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsOrganization",
+      "name": "SPORTS INSIGHT",
+      "url": "https://aimingtech.com/",
+      "logo": "https://aimingtech.com/logo.png",
+      "description": "실시간 스포츠 데이터 분석 및 전 세계 중계 일정 가이드 제공"
+    }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root { --gold: #c5a059; --dark: #121212; --white: #ffffff; --gray-light: #f7f7f7; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Noto Sans KR', sans-serif; background-color: #fff; color: var(--dark); line-height: 1.6; overflow-x: hidden; }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+
+        /* [Header] 디자인 및 모바일 대응 */
+        header { border-bottom: 1px solid #eee; position: sticky; top: 0; background: #fff; z-index: 1000; }
+        .nav-inner { max-width: 1300px; margin: 0 auto; display: flex; justify-content: space-between; align-items: flex-end; padding: 25px 20px; position: relative; }
+        .logo-area { display: inline-flex; flex-direction: column; }
+        .logo { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 900; line-height: 1; margin-bottom: 8px; color: #000; }
+        .logo-line { width: 100%; height: 3px; background-color: var(--gold); }
+        
+        nav { display: flex; gap: 30px; padding-bottom: 4px; }
+        nav a { font-size: 14px; font-weight: 700; color: #444; }
+        nav a:hover, nav a.active { color: var(--gold); }
+
+        /* [Mobile Toggle] 햄버거 버튼 */
+        .menu-toggle { display: none; flex-direction: column; cursor: pointer; gap: 6px; padding-bottom: 5px; }
+        .menu-toggle .bar { width: 25px; height: 3px; background-color: var(--dark); transition: 0.3s; }
+
+        /* [Hero Section] */
+        .hero { position: relative; height: 600px; background: var(--dark); display: flex; align-items: center; overflow: hidden; }
+        .hero-img { position: absolute; top: 0; right: 0; width: 70%; height: 100%; object-fit: cover; opacity: 0.5; mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0)); -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0)); }
+        .hero-content { position: relative; z-index: 10; max-width: 1300px; margin: 0 auto; width: 100%; padding: 0 40px; }
+        .hero-label { font-family: 'Playfair Display', serif; color: var(--gold); font-size: 14px; letter-spacing: 5px; font-weight: 700; display: block; margin-bottom: 20px; }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: 56px; font-weight: 900; line-height: 1.2; color: #fff; margin-bottom: 30px; }
+        .hero-btn { display: inline-block; padding: 16px 40px; background: var(--gold); color: #fff; font-size: 13px; font-weight: 700; transition: 0.3s; }
+        .hero-btn:hover { background: #b08d4a; transform: translateY(-3px); }
+
+        /* [Main Grid] */
+        .grid-section { max-width: 1300px; margin: 80px auto; padding: 0 20px; display: grid; grid-template-columns: 2fr 1fr; gap: 60px; }
+        .section-title { border-bottom: 2px solid var(--dark); margin-bottom: 40px; padding-bottom: 10px; }
+        .section-title h2 { font-family: 'Playfair Display', serif; font-size: 24px; text-transform: uppercase; }
+        .article-main { margin-bottom: 60px; }
+        .article-img { width: 100%; height: 400px; object-fit: cover; margin-bottom: 25px; border-radius: 2px; }
+        .card-meta { color: var(--gold); font-size: 12px; font-weight: 800; text-transform: uppercase; margin-bottom: 12px; display: block; }
+        .article-main h3 { font-family: 'Playfair Display', serif; font-size: 32px; margin-bottom: 20px; line-height: 1.3; }
+        .article-main p { color: #666; font-size: 16px; margin-bottom: 25px; text-align: justify; }
+        .read-more { font-weight: 700; font-size: 14px; border-bottom: 2px solid var(--gold); padding-bottom: 3px; }
+
+        /* [Trending Sidebar] */
+        .sidebar { background: var(--gray-light); padding: 40px; align-self: start; }
+        .sidebar h2 { font-family: 'Playfair Display', serif; font-size: 20px; margin-bottom: 30px; border-bottom: 1px solid #ddd; padding-bottom: 15px; }
+        .trending-item { margin-bottom: 25px; display: flex; gap: 15px; }
+        .rank { font-family: 'Playfair Display', serif; color: var(--gold); font-weight: 900; font-size: 18px; }
+        .trend-txt { font-size: 14px; font-weight: 600; color: #333; line-height: 1.4; }
+
+        /* [SEO Section] */
+        .seo-section { background: #fdfdfd; padding: 100px 20px; border-top: 1px solid #eee; }
+        .seo-inner { max-width: 900px; margin: 0 auto; line-height: 2.2; color: #555; font-size: 15px; }
+        .seo-inner h3 { color: #000; font-size: 22px; margin-bottom: 30px; }
+
+        footer { text-align: center; padding: 60px; color: #aaa; font-size: 12px; border-top: 1px solid #eee; }
+
+        /* [Mobile Optimization CSS] */
+        @media (max-width: 968px) {
+            .nav-inner { flex-direction: row; align-items: center; padding: 20px; }
+            .menu-toggle { display: flex; z-index: 1001; }
+            nav { 
+                display: none; position: absolute; top: 100%; left: 0; width: 100%; 
+                background: #fff; flex-direction: column; gap: 0; border-bottom: 3px solid var(--gold);
+                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            }
+            nav.active { display: flex; }
+            nav a { width: 100%; padding: 20px; border-bottom: 1px solid #eee; text-align: center; }
+            
+            .grid-section { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 38px; }
+            .hero-img { width: 100%; }
+            
+            .menu-toggle.active .bar:nth-child(1) { transform: translateY(9px) rotate(45deg); }
+            .menu-toggle.active .bar:nth-child(2) { opacity: 0; }
+            .menu-toggle.active .bar:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="nav-inner">
+        <div class="logo-area">
+            <a href="index.html" class="logo">SPORTS INSIGHT</a>
+            <div class="logo-line"></div>
+        </div>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <nav id="nav-menu">
+            <a href="live-schedule-relay.html">LIVE 편성표</a>
+            <a href="football-analysis.html">축구 분석</a>
+            <a href="nba-guide.html">농구 가이드</a>
+            <a href="mlb-report.html">야구 리포트</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <img src="https://images.unsplash.com/photo-1504450758481-7338eba7524a?q=80&w=2069&auto=format&fit=crop" alt="Hero Background" class="hero-img">
+    <div class="hero-content">
+        <span class="hero-label">PREMIUM ANALYSIS & DATA</span>
+        <h1>스포츠의 모든 순간,<br>심층적인 데이터로 만나다.</h1>
+        <a href="live-schedule-relay.html" class="hero-btn">오늘의 중계 일정 확인</a>
+    </div>
+</section>
+
+<main class="grid-section">
+    <section>
+        <div class="section-title"><h2>Latest Insights</h2></div>
+        <article class="article-main">
+            <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=2070&auto=format&fit=crop" class="article-img" alt="Football Analysis">
+            <span class="card-meta">Football / Analysis</span>
+            <h3>EPL 전술 패러다임의 변화: 인버티드 풀백과 스포츠중계 시청 전략</h3>
+            <p>현대 축구의 정점 프리미어리그에서 전술 트렌드는 매 시즌 진화합니다. 최근 각광받는 인버티드 풀백의 움직임을 실시간 중계에서 어떻게 포착하고 분석할지, 전문가의 시선으로 정리한 심층 리포트를 확인하세요.</p>
+            <a href="football-analysis.html" class="read-more">READ MORE</a>
+        </article>
+    </section>
+
+    <aside class="sidebar">
+        <h2>Trending Now</h2>
+        <div class="trending-item">
+            <span class="rank">01</span>
+            <a href="mlb-report.html" class="trend-txt">KBO 정규시즌 실시간 순위 및 전 경기 중계 일정 안내</a>
+        </div>
+        <div class="trending-item">
+            <span class="rank">02</span>
+            <a href="nba-guide.html" class="trend-txt">NBA 플레이오프 대진표 분석 및 라이브 데이터 가이드</a>
+        </div>
+        <div class="trending-item">
+            <span class="rank">03</span>
+            <a href="live-schedule-relay.html" class="trend-txt">PGA 투어 마스터즈 토너먼트 스포츠중계 편성표</a>
+        </div>
+        <div class="trending-item">
+            <span class="rank">04</span>
+            <a href="football-analysis.html" class="trend-txt">전문가 칼럼: 스포츠 데이터 분석이 승률에 미치는 영향</a>
+        </div>
+        <div class="trending-item">
+            <span class="rank">05</span>
+            <a href="live-schedule-relay.html" class="trend-txt">스포츠중계 기술의 미래: 초고화질 스트리밍의 시대</a>
+        </div>
+    </aside>
+</main>
+
+<section class="seo-section">
+    <div class="seo-inner">
+        <h3>SPORTS INSIGHT: 실시간 스포츠 데이터 가이드</h3>
+        <p>
+            <strong>스포츠인사이트</strong>는 <strong>aimingtech.com</strong>에서 제공하는 프리미엄 스포츠 정보 플랫폼으로, <strong>해외축구중계</strong>, <strong>EPL중계</strong>, <strong>MLB중계</strong> 등 주요 종목의 실시간 데이터를 제공합니다. <strong>쿠팡플레이</strong>, <strong>티빙(TVING)</strong> 등 공식 중계권사의 라이브 정보를 안내하여 4K급 고화질 시청 환경을 지원합니다. <strong>손흥민중계</strong>, <strong>김하성중계</strong> 등 코리안 리거의 활약상을 실시간으로 추적하며 정교한 라이브 스코어를 공유합니다.
+        </p>
+    </div>
+</section>
+
+<footer>
+    &copy; 2026 Sports Insight by AimingTech. All Rights Reserved.
+</footer>
+
+<script>
+    // [Mobile Menu Logic]
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navMenu = document.getElementById('nav-menu');
+
+    mobileMenu.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+
+    // Close menu when clicking links
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            navMenu.classList.remove('active');
+        });
+    });
+</script>
+
+</body>
+</html>
